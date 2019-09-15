@@ -1,0 +1,11 @@
+<template>
+    <div style="position: relative;">
+        <slot ontoggle={handleMenuToggle} name="button"></slot>
+
+        <slot>
+            <template if:true={open}>
+                <slot name="menu"></slot>
+            </template>
+        </slot>
+    </div>
+</template>
