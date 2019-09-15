@@ -1,0 +1,38 @@
+.hk-menu-item {
+    font-size: 13px;
+    color: #475366;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 5px 15px 5px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1.5;
+    cursor: pointer;
+    border-style: none;
+    border-width: 0;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+    background: #fff;
+    transition: background-color 0.15s ease-in-out;
+    width: 100%;
+}
+
+.hk-menu-item:hover,
+.hk-menu-item:active,
+.hk-menu-item:focus {
+    color: #323b49;
+    background: #f7f8fb;
+}
+
+.hk-menu-item:focus {
+    border-radius: 4px;
+    z-index: 2;
+    background: #f7f3fb;
+    outline: none;
+    border-color: #79589f;
+    -webkit-box-shadow: 0 0 0 2px rgba(157, 112, 208, 0.4);
+    box-shadow: 0 0 0 2px rgba(157, 112, 208, 0.4);
+}
