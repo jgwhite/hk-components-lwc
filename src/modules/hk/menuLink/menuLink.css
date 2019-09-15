@@ -1,4 +1,5 @@
-.hk-menu-link {
+.hk-menu-link,
+.hk-menu-link--danger {
     font-size: 13px;
     color: #475366;
     position: relative;
@@ -19,6 +20,10 @@
     transition: background-color 0.15s ease-in-out;
 }
 
+.hk-menu-link--danger {
+    color: #de0a0a;
+}
+
 .hk-menu-link:hover,
 .hk-menu-link:active,
 .hk-menu-link:focus {
@@ -34,4 +39,13 @@
     border-color: #79589f;
     -webkit-box-shadow: 0 0 0 2px rgba(157, 112, 208, 0.4);
     box-shadow: 0 0 0 2px rgba(157, 112, 208, 0.4);
+}
+
+.hk-menu-link--danger:focus {
+    border-radius: 4px;
+    z-index: 2;
+    outline: none;
+    border-color: #de0a0a;
+    -webkit-box-shadow: 0 0 0 2px rgba(229, 143, 143, 0.4);
+    box-shadow: 0 0 0 2px rgba(229, 143, 143, 0.4);
 }

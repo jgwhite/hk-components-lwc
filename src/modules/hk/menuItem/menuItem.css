@@ -1,4 +1,5 @@
-.hk-menu-item {
+.hk-menu-item,
+.hk-menu-item--danger {
     font-size: 13px;
     color: #475366;
     position: relative;
@@ -20,6 +21,10 @@
     width: 100%;
 }
 
+.hk-menu-item--danger {
+    color: #de0a0a;
+}
+
 .hk-menu-item:hover,
 .hk-menu-item:active,
 .hk-menu-item:focus {
@@ -35,4 +40,13 @@
     border-color: #79589f;
     -webkit-box-shadow: 0 0 0 2px rgba(157, 112, 208, 0.4);
     box-shadow: 0 0 0 2px rgba(157, 112, 208, 0.4);
+}
+
+.hk-menu-item--danger:focus {
+    border-radius: 4px;
+    z-index: 2;
+    outline: none;
+    border-color: #de0a0a;
+    -webkit-box-shadow: 0 0 0 2px rgba(229, 143, 143, 0.4);
+    box-shadow: 0 0 0 2px rgba(229, 143, 143, 0.4);
 }
