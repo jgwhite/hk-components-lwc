@@ -1,5 +1,10 @@
 <template>
-    <button class="hk-menu-button" onclick={handleClick}>
+    <button
+        aria-expanded="false"
+        aria-haspopup="menu"
+        class="hk-menu-button"
+        onclick={handleClick}
+    >
         <slot></slot>
     </button>
 </template>

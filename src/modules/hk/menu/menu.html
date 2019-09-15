@@ -1,9 +1,9 @@
 <template>
-    <div class="hk-menu" style="position: relative;">
+    <div class="hk-menu" style="position: relative; display: inline-block;">
         <slot onmenutoggle={handleMenuToggle} name="button"></slot>
         <slot>
             <template if:true={open}>
-                <slot name="menu"></slot>
+                <slot onslotchange={handleSlotChange} name="menu"></slot>
             </template>
         </slot>
     </div>
