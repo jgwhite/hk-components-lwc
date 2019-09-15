@@ -1,6 +1,6 @@
 <template>
     <div class="hk-menu" style="position: relative;">
-        <slot ontoggle={handleMenuToggle} name="button"></slot>
+        <slot onmenutoggle={handleMenuToggle} name="button"></slot>
         <slot>
             <template if:true={open}>
                 <slot name="menu"></slot>
