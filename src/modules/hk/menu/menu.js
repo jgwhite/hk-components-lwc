@@ -24,11 +24,16 @@ export default class HKMenu extends LightningElement {
 
     handleClick = e => {
         if (this.open) {
-            const internalClick = e.path.some(n => {
-                return n.nodeName && n.nodeName.toLowerCase().includes('hk-');
-            });
-            if (!internalClick) {
-                this.reset();
+            const path = e.composedPath();
+            if (path) {
+                const internalClick = path.some(n => {
+                    return (
+                        n.nodeName && n.nodeName.toLowerCase().includes('hk-')
+                    );
+                });
+                if (!internalClick) {
+                    this.reset();
+                }
             }
         }
     };
