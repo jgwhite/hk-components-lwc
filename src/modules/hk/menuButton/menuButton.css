@@ -1,7 +1,5 @@
 button {
     font-size: 13px;
-    line-height: 22px;
-    height: 32px;
     transition: background-color 0.2s ease, border-color 0.2s ease,
         -webkit-filter 0.2s ease;
     -webkit-transition: background-color 0.2s ease, border-color 0.2s ease,
@@ -33,7 +31,7 @@ button {
     background-origin: border-box !important;
     color: #79589f;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid #a997bf;
 }
 
@@ -42,4 +40,16 @@ button:focus {
     border-color: #79589f;
     -webkit-box-shadow: 0 0 0 2px rgba(157, 112, 208, 0.4);
     box-shadow: 0 0 0 2px rgba(157, 112, 208, 0.4);
+}
+
+button.subtle {
+    padding: 5px;
+    border-color: #e3e7ef;
+}
+
+button.subtle:focus {
+    outline: none;
+    border-color: #62738d;
+    -webkit-box-shadow: 0 0 0 2px rgba(89, 105, 129, 0.2);
+    box-shadow: 0 0 0 2px rgba(89, 105, 129, 0.2);
 }

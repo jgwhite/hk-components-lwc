@@ -15,22 +15,20 @@ export default class HKMenu extends LightningElement {
         document.removeEventListener('click', this.handleClick);
     }
 
-    reset = () => {
+    reset() {
         this.open = false;
         this.items = [];
         this.selectedIndex = 0;
         this.querySelector('hk-menu-button').ariaExpanded = 'false';
-    };
+    }
 
     handleClick = e => {
         if (this.open) {
             const path = e.composedPath();
+
             if (path) {
-                const internalClick = path.some(n => {
-                    return (
-                        n.nodeName && n.nodeName.toLowerCase().includes('hk-')
-                    );
-                });
+                const internalClick = path.some(n => n === this.template);
+
                 if (!internalClick) {
                     this.reset();
                 }
@@ -74,7 +72,7 @@ export default class HKMenu extends LightningElement {
     handleSlotChange() {
         if (this.open) {
             this.items = Array.from(
-                this.querySelector('hk-menu-list').childNodes
+                this.querySelector('hk-menu-list').children
             ).filter(node => {
                 return !node.nodeName.toLowerCase().includes('divider');
             });

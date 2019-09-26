@@ -1,14 +1,26 @@
-.hk-menu-list {
-  top: 100%;
-  min-width: 200px;
-  position: absolute;
-  list-style-type: none;
-  box-shadow: 0 0 0 1px rgba(89,105,129,0.1), 0 3px 20px 0 rgba(89,105,129,0.3), 0 1px 2px 0 rgba(0,0,0,0.05);
-  font-size: 13px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 5px 0;
-  background: #fff;
-  text-align: left;
-  border-radius: 4px;
+.hk-menu-list,
+.hk-menu-list--left,
+.hk-menu-list--right {
+    top: 100%;
+    min-width: 200px;
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0 0 0 1px rgba(89, 105, 129, 0.1),
+        0 3px 20px 0 rgba(89, 105, 129, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    background: #fff;
+    text-align: left;
+    border-radius: 4px;
+    z-index: 999;
+}
+
+.hk-menu-list--left {
+    left: 0;
+}
+
+.hk-menu-list--right {
+    right: 0;
 }
